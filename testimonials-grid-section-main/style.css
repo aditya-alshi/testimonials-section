@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* font-family: "Barlow Semi Condensed", sans-serif; */
+:root {
+  /* Primary */
+  --Purple_50: hsl(260, 100%, 95%);
+  --Purple_300: hsl(264, 82%, 80%);
+  --Purple_500: hsl(263, 55%, 52%);
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Grey_100: hsl(214, 17%, 92%);
+  --Grey_200: hsl(0, 0%, 81%);
+  --Grey_400: hsl(224, 10%, 45%);
+  --Grey_500: hsl(217, 19%, 35%);
+  --Dark_blue: hsl(219, 29%, 14%);
+  --Black: hsl(0, 0%, 7%);
+
+  font-size: 13px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: var(--Purple_50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  padding: 3rem;
+}
+
+main > div[id] {
+  color: var(--White);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  padding: 2.5rem;
+  box-shadow: 2.5rem 4rem 10rem -3rem hsla(217, 19%, 35%, 0.733);
+}
+
+main > div[id]:not(:first-child) {
+  margin-top: 2.8rem;
+}
+
+main > div[id] div.head--section {
+  display: flex;
+  align-items: center;
+}
+
+main > div[id] div.head--section img {
+  width: 2.5rem;
+  border-radius: 1000px;
+  border: 0.2rem solid hsla(264, 82%, 80%, 0.61);
+}
+
+main > div[id] div.head--section > div {
+  margin-left: 1rem;
+  font-weight: 400;
+}
+
+main > div[id] div.head--section > div p.students-name {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+main > div[id] div.head--section > div p.verified--status {
+  font-size: 0.9rem;
+}
+
+main > div[id] > p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+main > div[id] > blockquote {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+div#card--1 {
+  background-color: var(--Purple_500);
+  grid-area: one;
+}
+
+div#card--2 {
+  background-color: var(--Grey_500);
+  grid-area: two;
+}
+
+div#card--3 {
+  grid-area: three;
+}
+
+div#card--3,
+div#card--5 {
+  background-color: var(--White);
+  color: var(--Dark_blue);
+}
+
+div#card--4 {
+  background-color: var(--Dark_blue);
+  grid-area: four;
+}
+
+div#card--5 {
+  background-color: white;
+  grid-area: five;
+}
+
+@media (min-width: 600px) and (max-width: 1299px) {
+  main > div[id]:not(:first-child) {
+    margin-top: 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, auto));
+    grid-template-areas:
+      "one one two"
+      "three four four"
+      "five five five";
+    row-gap: 1.8rem;
+    column-gap: 2.1rem;
+  }
+
+  div#card--1 {
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 86% 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  main > div[id]:not(:first-child) {
+    margin-top: 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, auto));
+    grid-template-areas:
+      "one one two five"
+      "three four four five";
+    row-gap: 1.8rem;
+    column-gap: 2.1rem;
+  }
+
+  div#card--1 {
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 86% 0;
+  }
+}
