@@ -77,9 +77,7 @@ I learnt why grid-template-areas was a better approch than grid-template-rows an
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Testimonials grid](https://adityatestimonials-section.netlify.app/)
 
 ## Acknowledgments
 
