@@ -61,13 +61,15 @@ main > div[id] div.head--section > div {
   font-weight: 400;
 }
 
-main > div[id] div.head--section > div p.students-name {
+main > div[id] div.head--section > div h1.students-name {
   font-size: 1rem;
   line-height: 1.5rem;
+  font-weight: 500;
 }
 
-main > div[id] div.head--section > div p.verified--status {
+main > div[id] div.head--section > div h2.verified--status {
   font-size: 0.9rem;
+  font-weight: 400;
 }
 
 main > div[id] > p {
