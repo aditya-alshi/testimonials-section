@@ -34,11 +34,11 @@ main {
 }
 
 main > div[id] {
-  color: var(--White);
+  color: var(--Grey_100);
   border-radius: 0.8rem;
   overflow: hidden;
   padding: 2.5rem;
-  box-shadow: 2.5rem 4rem 10rem -3rem hsla(217, 19%, 35%, 0.733);
+  box-shadow: 3.5rem 5rem 3rem -1rem hsla(217, 19%, 35%, 0.217);
 }
 
 main > div[id]:not(:first-child) {
@@ -74,7 +74,7 @@ main > div[id] div.head--section > div h2.verified--status {
 
 main > div[id] > p {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
@@ -101,7 +101,7 @@ div#card--3 {
 div#card--3,
 div#card--5 {
   background-color: var(--White);
-  color: var(--Dark_blue);
+  color: var(--Grey_500);
 }
 
 div#card--4 {
@@ -146,7 +146,7 @@ div#card--5 {
   }
 
   main {
-    width: 75%;
+    width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, auto));
